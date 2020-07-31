@@ -11,9 +11,9 @@ application {
     packageName com.jhipster.demo.store,
     serviceDiscoveryType eureka,
     authenticationType jwt,
-    prodDatabaseType mysql,
+    prodDatabaseType postgresql,
     cacheProvider hazelcast,
-    buildTool gradle,
+    buildTool maven,
     clientFramework react,
     useSass true,
     testFrameworks [protractor]
@@ -28,8 +28,8 @@ application {
     packageName com.jhipster.demo.invoice,
     serviceDiscoveryType eureka,
     authenticationType jwt,
-    prodDatabaseType mysql,
-    buildTool gradle,
+    prodDatabaseType postgresql,
+    buildTool maven,
     serverPort 8081,
     skipUserManagement true
   }
@@ -48,7 +48,7 @@ application {
     devDatabaseType mongodb,
     cacheProvider no,
     enableHibernateCache false,
-    buildTool gradle,
+    buildTool maven,
     serverPort 8082,
     skipUserManagement true
   }
