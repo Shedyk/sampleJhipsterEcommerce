@@ -128,7 +128,7 @@
     "prettier:format": "prettier --write \"{,src/**/}*.{md,json,ts,tsx,css,scss,yml}\"",
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
     "lint:fix": "npm run lint -- --fix",
-    "cleanup": "rimraf build/resources/main/static/",
+    "cleanup": "rimraf target/classes/static/",
     "e2e": "protractor src/test/javascript/protractor.conf.js",
     "postinstall": "node node_modules/protractor/bin/webdriver-manager update --gecko false",
     "start": "npm run webpack:dev",
@@ -149,7 +149,7 @@
     "webpack": "node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js"
   },
   "jestSonar": {
-    "reportPath": "build/test-results/jest",
+    "reportPath": "target/test-results/jest",
     "reportFile": "TESTS-results-sonar.xml"
   }
 }

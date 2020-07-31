@@ -6,7 +6,7 @@
     "serviceDiscoveryType": "eureka",
     "skipUserManagement": true,
     "baseName": "notification",
-    "buildTool": "gradle",
+    "buildTool": "maven",
     "databaseType": "mongodb",
     "devDatabaseType": "mongodb",
     "enableHibernateCache": false,
